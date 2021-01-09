@@ -1,0 +1,11 @@
+{
+    "pipeDrive": {
+        "urlBase": "https://companydomain.pipedrive.com/api/v1",
+        "apikey":"a4af879fb01b0facabef75cc328c248aaa45b14c"
+    },
+    
+    "bling": {
+        "urlBase": "https://bling.com.br/Api/v2",
+        "apikey":"777fd6def07a286ff7cb00691540ff13a3caa446f20a70cb38357d7de998b6fb69d54068"
+    }
+}
