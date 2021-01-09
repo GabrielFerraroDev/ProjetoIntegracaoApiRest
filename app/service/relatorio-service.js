@@ -21,27 +21,39 @@ const getFormData = (pedidoXml) => {
 }
 
 const getRelatorio = async () => {
-  const dados = await Relatorio.find({})
-  return dados
+  try {
+    const dados = await Relatorio.find({})
+    return dados
+  } catch (err) {
+    return `[Erro]:${err}`
+  }
 }
 
 const postRelatorio = async () => {
-  const res = await Relatorio.create({
-    oportunidadesDia: '0',
-    valorTotal: '0',
-  })
+  try {
+    const res = await Relatorio.create({
+      oportunidadesDia: '0',
+      valorTotal: '0',
+    })
 
-  return res
+    return res
+  } catch (err) {
+    return `[Erro]:${err}`
+  }
 }
 
 const getGanhos = async () => {
-  let dados = await axios.get(
-    `${uriPipeDrive}/deals?status=won&api_token=${apiKeyPipe}`
-  )
-  dados = dados.data
-  console.log(dados)
+  try {
+    let dados = await axios.get(
+      `${uriPipeDrive}/deals?status=won&api_token=${apiKeyPipe}`
+    )
+    dados = dados.data
+    console.log(dados)
 
-  return dados
+    return dados
+  } catch (err) {
+    return `[Erro]:${err}`
+  }
 }
 
 const realizarIntegracao = async () => {
@@ -74,7 +86,7 @@ const realizarIntegracao = async () => {
     }
   } catch (err) {
     console.log(err)
-    return 'Erro na requisição'
+    return `[Erro]:${err}`
   }
 }
 
