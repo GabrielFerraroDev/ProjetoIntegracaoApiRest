@@ -29,11 +29,11 @@ const getRelatorio = async () => {
   }
 }
 
-const postRelatorio = async () => {
+const postRelatorio = async (objRelatorio) => {
   try {
     const res = await Relatorio.create({
-      oportunidadesDia: '0',
-      valorTotal: '0',
+      oportunidadesDia: objRelatorio.oportunidadesDia,
+      valorTotal: objRelatorio.valorTotal,
     })
 
     return res
@@ -82,7 +82,7 @@ const realizarIntegracao = async () => {
         },
       })
 
-      return res.data.retorno.pedidos
+      return res.data.retorno
     }
   } catch (err) {
     console.log(err)

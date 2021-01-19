@@ -12,12 +12,16 @@ app.get('/relatorio', async (req, res) => {
 })
 
 app.post('/relatorio', async (req, res) => {
-  const response = await service.postRelatorio()
+  const obj = req.body
+
+  const response = await service.postRelatorio(obj)
+
   res.send(response)
 })
 
 app.get('/ganhos', async (req, res) => {
   const response = await service.getGanhos()
+
   res.send(response)
 })
 
@@ -26,4 +30,6 @@ app.get('/integracao', async (req, res) => {
   res.send(response)
 })
 
-app.listen(3000)
+const server = app.listen(3000)
+
+module.exports = server

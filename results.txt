@@ -1,0 +1,83 @@
+
+[0m[0m
+[0m  :: index[0m
+MongoDB database connection established successfully
+  [32m  √[0m[90m [200] [POST] /relatorio[0m[31m (1583ms)[0m
+  [32m  √[0m[90m [200] [GET] /relatorio[0m[31m (153ms)[0m
+{
+  success: [33mtrue[39m,
+  data: [
+    {
+      id: [33m1[39m,
+      creator_user_id: [36m[Object][39m,
+      user_id: [36m[Object][39m,
+      person_id: [36m[Object][39m,
+      org_id: [36m[Object][39m,
+      stage_id: [33m3[39m,
+      title: [32m'Negócio Nãohá'[39m,
+      value: [33m1000[39m,
+      currency: [32m'BRL'[39m,
+      add_time: [32m'2021-01-09 12:45:44'[39m,
+      update_time: [32m'2021-01-09 12:46:13'[39m,
+      stage_change_time: [32m'2021-01-09 12:45:56'[39m,
+      active: [33mfalse[39m,
+      deleted: [33mfalse[39m,
+      status: [32m'won'[39m,
+      probability: [1mnull[22m,
+      next_activity_date: [1mnull[22m,
+      next_activity_time: [1mnull[22m,
+      next_activity_id: [1mnull[22m,
+      last_activity_id: [1mnull[22m,
+      last_activity_date: [1mnull[22m,
+      lost_reason: [1mnull[22m,
+      visible_to: [32m'3'[39m,
+      close_time: [32m'2021-01-09 12:46:13'[39m,
+      pipeline_id: [33m1[39m,
+      won_time: [32m'2021-01-09 12:46:13'[39m,
+      first_won_time: [32m'2021-01-09 12:46:13'[39m,
+      lost_time: [1mnull[22m,
+      products_count: [33m0[39m,
+      files_count: [33m0[39m,
+      notes_count: [33m0[39m,
+      followers_count: [33m1[39m,
+      email_messages_count: [33m0[39m,
+      activities_count: [33m0[39m,
+      done_activities_count: [33m0[39m,
+      undone_activities_count: [33m0[39m,
+      participants_count: [33m1[39m,
+      expected_close_date: [32m'2021-01-11'[39m,
+      last_incoming_mail_time: [1mnull[22m,
+      last_outgoing_mail_time: [1mnull[22m,
+      label: [1mnull[22m,
+      stage_order_nr: [33m2[39m,
+      person_name: [32m'Jõao'[39m,
+      org_name: [32m'Nãohá'[39m,
+      next_activity_subject: [1mnull[22m,
+      next_activity_type: [1mnull[22m,
+      next_activity_duration: [1mnull[22m,
+      next_activity_note: [1mnull[22m,
+      formatted_value: [32m'R$ 1.000'[39m,
+      weighted_value: [33m1000[39m,
+      formatted_weighted_value: [32m'R$ 1.000'[39m,
+      weighted_value_currency: [32m'BRL'[39m,
+      rotten_time: [1mnull[22m,
+      owner_name: [32m'Gabriel'[39m,
+      cc_email: [32m'naotem+deal1@pipedrivemail.com'[39m,
+      org_hidden: [33mfalse[39m,
+      person_hidden: [33mfalse[39m
+    }
+  ],
+  additional_data: {
+    pagination: { start: [33m0[39m, limit: [33m100[39m, more_items_in_collection: [33mfalse[39m }
+  },
+  related_objects: {
+    user: { [32m'11942566'[39m: [36m[Object][39m },
+    organization: { [32m'1'[39m: [36m[Object][39m },
+    person: { [32m'1'[39m: [36m[Object][39m }
+  }
+}
+  [32m  √[0m[90m [200] [GET] /ganhos[0m[31m (375ms)[0m
+
+
+[92m [0m[32m 3 passing[0m[90m (2s)[0m
+
